@@ -1,4 +1,4 @@
-package main
+package repl
 
 import "testing"
 
@@ -34,7 +34,7 @@ func TestCleanInput(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		actual := cleanInput(c.input)
+		actual := CleanInput(c.input)
 
 		if len(actual) != len(c.expected) {
 			t.Fatalf("expected %d words, got %d: %#v", len(c.expected), len(actual), actual)

@@ -1,11 +1,11 @@
-package main
+package repl
 
 import (
 	"strings"
 	"unicode"
 )
 
-func cleanInput(text string) []string {
+func CleanInput(text string) []string {
 	var out []string
 	last := -1
 
